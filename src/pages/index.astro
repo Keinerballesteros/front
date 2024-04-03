@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Banner from '../components/Banner.astro';
+import CardProductos from '../components/CardProductos.astro';
+import Google from "../../public/icons/google.astro"
+import Facebook from "../../public/icons/facebook.astro"
+import Twitter from "../../public/icons/twitter.astro"
+import Apple from "../../public/icons/apple.astro"
+//import Card from '../components/Card.astro';
+---
+
+<Layout title="Aliexpress clone">
+	<Banner url={"/public/img/banner.webp"} ></Banner>
+	<div class="grid grid-cols-9 grid-rows-7 gap-2 w-auto ml-10 mr-2">
+		<div class="bg-slate-300 col-span-2 row-span-2 min-h-40 rounded-2xl">
+			<div class="flex ml-2  justify-center mt-3">
+                <button class="bg-black text-white rounded-full flex-row  text-wrap h-10 w-[120px] font-bold ">Regístrate</button>
+                <button class="bg-white text-black flex-row rounded-full text-wrap h-10 w-[120px]  border border-black font-bold  ml-2">Entrar</button>
+			</div>
+                <p class="p-2 items-center ml-24">O continúa en:</p>
+                <div class="flex space-x-2 ml-20">
+                    <Google class="size-8 flex-row"></Google>
+                    <Facebook class="size-8 flex-row"></Facebook>
+                    <Twitter class="size-8 flex-row"></Twitter>
+                    <Apple class="size-8 flex-row"></Apple>
+                </div>
+
+		</div>
+		<div class="bg-slate-300 col-span-3 row-span-7 min-h-40 rounded-2xl">
+			<h2 class="text-red-400 text-2xl font-bold ml-2 mt-3">Superventas</h2>
+			<p class="ml-2">Obten descuentos en artículos populares</p>
+		</div>
+		<div class="bg-slate-300 col-span-4 row-span-4 min-h-40 ">
+		<h2 class="text-red-400 text-2xl font-bold ml-2 mt-3">Marcas Top</h2>
+		<p class="ml-2">Gran selección de precio y calidad</p>
+		</div>
+		<div class="bg-slate-300 col-span-2 row-span-5 min-h-40 ">
+			<h2 class="text-red-400 text-2xl font-bold ml-2 mt-3">Oferta de Bienvenida</h2>
+			<p class="ml-2">Tu precio exclusivo</p>
+
+		</div>
+		<div class="bg-orange-700 text-white col-span-4 row-span-4 min-h-40 ">5</div>
+	</div >
+	
+
+</Layout>
+
+<style>
+
+</style>
